@@ -1,31 +1,84 @@
-Predicting Applicant Withdrawal Risk – TFA Case (R)
-This repository contains an R-based predictive modeling project focused on predicting applicant withdrawal risk in the TFA admissions process. The goal is to analyze factors influencing withdrawal and build machine learning models that support proactive admissions strategies.
+# Predicting Applicant Withdrawal Risk – TFA Case (R)
 
-Project Overview
-The objective of this project is to identify applicants who may withdraw early from the admissions pipeline. Predicting withdrawal risk enables better resource planning and improved engagement with candidates throughout the process.
-This case forms part of a practical predictive analytics study using the TFA dataset.
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Objective](#objective)
+- [Techniques & Methods](#techniques--methods)
+- [Repository Structure](#repository-structure)
+- [Tools & Libraries](#tools--libraries)
+- [Key Outcomes](#key-outcomes)
+- [Usage](#usage)
+- [License](#license)
 
-Techniques & Methods
-Exploratory Data Analysis (EDA)
-Handling imbalanced dataset using Downsampling and Upsampling
-Building and evaluating multiple classification models in R
-Performance evaluation using confusion matrices, accuracy, sensitivity, and specificity
+---
 
-Repository Contents
--File	Description
--R code using upsampling	R script implementing upsampling and model training
--R code_Using Downsampling	R script implementing downsampling and performance comparison
--TFA-Predictive_Analytics_R.pdf	Final report summarizing analysis and results
--README.md	Project documentation
+## Project Overview
+This project focuses on predicting applicant withdrawal risk in the TFA admissions process using R. The goal is to analyze factors influencing withdrawal and build machine learning models that support proactive admissions strategies.
 
-Tools and R Libraries Used
-caret
-C50
-e1071
-kernlab
-class
-nnet
-NeuralNetTools
+---
 
-Key Outcome
-The analysis compares downsampling and upsampling techniques and identifies the best-performing model to predict applicant withdrawal risk with improved reliability.
+## Objective
+- Identify applicants likely to withdraw early from the admissions pipeline.
+- Enable better resource planning and improve engagement with candidates.
+- Provide insights for data-driven admissions strategies.
+
+---
+
+## Techniques & Methods
+- Exploratory Data Analysis (EDA)
+- Handling imbalanced datasets using:
+  - **Downsampling**
+  - **Upsampling**
+- Building and evaluating multiple classification models in R
+- Performance evaluation using:
+  - Confusion matrices
+  - Accuracy
+  - Sensitivity
+  - Specificity
+
+---
+
+## Repository Structure
+```
+TFA-Withdrawal-Risk/
+│
+├── R-Scripts/                    # Folder containing R scripts
+│   ├── upsampling.R              # Implements upsampling and model training
+│   └── downsampling.R            # Implements downsampling and performance comparison
+│
+├── Reports/                      # Folder containing reports and outputs
+│   └── TFA-Predictive_Analytics_R.pdf  # Final report summarizing analysis & results
+│
+└── README.md                     # Project documentation
+```
+
+---
+
+## Tools & Libraries
+- **R Packages:** caret, C50, e1071, kernlab, class, nnet, NeuralNetTools
+
+---
+
+## Key Outcomes
+- Compared downsampling and upsampling techniques for imbalanced datasets.
+- Identified the best-performing model to predict applicant withdrawal risk.
+- Improved reliability of predictions for proactive admissions engagement.
+
+---
+
+## Usage
+The original dataset used in this project is proprietary and cannot be shared publicly. 
+
+To replicate the analysis or run the R scripts:
+
+1. Prepare your own dataset with a similar structure (applicant features and withdrawal label).
+2. Place your dataset in the `R-Scripts/` folder.
+3. Open R or RStudio.
+4. Update the file path in the R scripts (`upsampling.R` or `downsampling.R`) to point to your dataset.
+5. Run the scripts to perform preprocessing, model training, and evaluation.
+
+Note: The scripts include handling of imbalanced datasets (upsampling and downsampling) and classification model evaluation.
+
+
+
+## Repository Structure
